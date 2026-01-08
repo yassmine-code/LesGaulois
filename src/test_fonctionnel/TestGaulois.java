@@ -1,6 +1,7 @@
 package test_fonctionnel;
 
 import personnages.Gaulois;
+import personnages.Romain;
 
 public class TestGaulois {
 	//main A
@@ -8,5 +9,11 @@ public class TestGaulois {
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix.getNom());
 		asterix.parler("Bonjour à tous");
+		Romain minus= new Romain("Minus",6);
+		minus.parler("Un gau... un gaugau...");
+		for(int i=0;i<2;i++) {
+			minus.recevoirCoup(3);
+		}
+		
 	}
 }

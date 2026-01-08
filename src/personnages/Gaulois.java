@@ -15,9 +15,17 @@ public class Gaulois {
 	public void parler(String texte) {
 		System.out.println("Le gaulois "+nom + ":«" + texte + "»");
 	}
+	public void frapper(Romain r) {
+		System.out.println(nom+ " envoie un grand coup dans la machoire de "+ r.getNom());
+		
+		
+	}
 	//main C
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix.getNom());
+		Romain minus= new Romain("Minus",6);
+		asterix.frapper(minus);
+		
 	}
 }
